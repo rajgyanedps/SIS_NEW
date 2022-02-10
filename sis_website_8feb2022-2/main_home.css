@@ -1,0 +1,501 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+br{padding:0px; margin:0px;}
+@font-face {
+    font-family: 'CalibriRegular';
+    src: url('../fonts/calibri/calibri.eot');
+    src: url('../fonts/calibri/calibri.eot') format('embedded-opentype'),
+         url('../fonts/calibri/calibri.woff') format('woff'),
+         url('../fonts/calibri/calibri.ttf') format('truetype'),
+         url('../fonts/calibri/calibri.svg#CalibriRegular') format('svg');
+}
+@font-face {
+    font-family: 'goudy_old_stylebold';
+    src: url('../fonts/goudy/goudosb-webfont.eot');
+    src: url('../fonts/goudy/goudosb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/goudy/goudosb-webfont.woff2') format('woff2'),
+         url('../fonts/goudy/goudosb-webfont.woff') format('woff'),
+         url('../fonts/goudy/goudosb-webfont.ttf') format('truetype'),
+         url('../fonts/goudy/goudosb-webfont.svg#goudy_old_stylebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+img{border:0px;}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+#main_wrapper{ width:100%; float:none; margin:0 auto; padding:0px;}
+
+#Header{width:100%; float:left; margin:0px; padding:0px; }
+#Header_top_links{width:100%; float:left; margin:0px; padding:0px; background:#00743d; height:28px; }
+.Header_top_links_box{width:1010px; float:none; margin:0px auto; padding:0px; }
+#Header_top_links ul{width:320px; float:right; margin:0px; padding:0px; }
+#Header_top_links li{ display:inline; float:left;color:#FFF; font-family:Arial, Helvetica, sans-serif; }
+#Header_top_links a{line-height:25px; padding:0px 10px; color:#FFF; text-decoration:none; font-size:10px; border-right:1px solid #FFF;}
+#Header_top_links a:hover{line-height:25px; padding:0px 10px; color:#FC0; text-decoration:none; font-size:10px; border-right:1px solid #FFF; text-decoration:underline}
+#Header_top_links p{width:100%; float:left; margin:0px; padding:0px; background:#ffba00; height:3px; }
+
+.Header_shadow{width:100%; float:left;  margin:0px; padding:0px; background:url(../images/white_shadow.png) left top repeat-x; }
+.Header_mid_box{width:1010px; float:none; margin:0px auto; padding:0px;}
+.Header_mid_box h1{width:490px; height:100px; float:left; margin:0px 0px ; padding:0px; background:url(../images/sis_logo_test.png) 0 0px no-repeat;}
+
+.Header_mid_box_call{width:520px;  float:left; margin:0px 0 5px 0px ; padding:0px;  }
+.Header_mid_box_call_icon{width:25px; height:20px;  float:left; margin:0px 0 0px 10px ; padding:5px 0 0 0px; background:url(../images/call_smal.png)left  no-repeat;}
+.Header_mid_box_call span{width:480px;  float:left; margin:5px 0px ; padding:0px; font-size:13px; font-weight:bold; color:#ffffff;  text-align:left;font-family:Arial, Helvetica, sans-serif; text-shadow:1px 1px 0 #333;}
+
+
+.Header_mid_box_3d{width:280px;  float:left; margin:0px ; padding:0px; text-align:right;}
+.Header_mid_box_menu{width:1010px; float:left; margin:0px; padding:0px; }
+
+.mid_links{width:1010px; float:none; margin:0px auto; padding:0px; }
+.mid_links_box_banner{width:1010px; float:left; margin:0 0 0 80px; padding:0px;bottom:90px; display:block; position:absolute;}
+.mid_links_box{width:1010px; float:left; margin:0px; padding:0px;bottom:50px; display:block; position:absolute;}
+
+.mid_links h1{ width:150px; height:59px; float:left; margin:0px; padding:0px; background:url(../images/gurukul.png) left top no-repeat;}
+.mid_links .iit{ width:134px; height:40px; float:left; margin:0 0 0 10px; padding:0px; }
+.mid_links .iit a{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/iit-jee.png)0px 0px no-repeat; }
+.mid_links .iit a:hover{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/iit-jee.png) 0px -40px no-repeat;  }
+
+
+.mid_links .neet{ width:134px; height:40px; float:left; margin:0 0 0 8px; padding:0px;  }
+.mid_links .neet a{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/neet.png)0 0 no-repeat; }
+.mid_links .neet a:hover{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/neet.png) 0px -40px no-repeat;  }
+
+
+.mid_links .arjuna{ width:134px; height:40px; float:left; margin:0 0 0 8px; padding:0px;  }
+.mid_links .arjuna a{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/arjuna.png)0 0 no-repeat; }
+.mid_links .arjuna a:hover{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/arjuna.png) 0px -40px no-repeat;  }
+
+.footer_home{width:100%; float:none; height:50px; margin:0px auto; padding:0px; background:#00743d; position:fixed; bottom:0px; box-shadow:0px 0px 10px 5px #333333;}
+.footer_home span{width:100%; float:left; height:6px; margin:0px; padding:0px; background:#ffba00; }
+.footer_inner{width:1010px; float:none;  margin:0px auto; padding:0px; }
+.footer_left{width:300px; float:left; margin:0px; padding:0px 0 0 0px; line-height:45px;  color:#ffffff; font-size:14px;text-shadow: 1px 1px 0px rgba(0, 43, 23, 1); }
+.footer_left p{float:left;  color:#FFF; font-size:10px; margin:0px; padding:0px 0; }
+.footer_mid_logo{width:310px; float:left; margin:0px; padding:8px 0 0 0px;  }
+.footer_right{width:400px; float:left; margin:0px; padding:5px 0 0 0px; font-family:Georgia, "Times New Roman", Times, serif; color:#FFF; font-size:16px; }
+
+.copyright_text{width:180px; height:50px;float:left;margin:0px; padding:0 0 0 20px;font-family:Georgia, "Times New Roman", Times, serif; color:#FFF;font-size:11px; line-height:32px }
+.social{width:140px; height:50px;float:left;margin:0px; padding:0px;font-family:Georgia, "Times New Roman", Times, serif; color:#FFF;font-size:10px; }
+.social_fb{width:28px; height:28px; float:left;
+margin:0px; padding:0px;}
+.social_fb a{width:28px; height:28px; float:left;
+margin:0px; padding:0px; background:url(../images/social/sicua.png)0 0 no-repeat;}
+.social_fb a:hover{width:28px; height:28px; float:left;
+margin:0px; padding:0px; background:url(../images/social/sicua.png)0 -32px no-repeat;}
+
+.social_prin{width:28px; height:28px; float:left;
+margin:0 0 0 8px; padding:0px;}
+.social_prin a{width:28px; height:28px; float:left;
+margin:0px; padding:0px; background:url(../images/social/sicua.png)-43px 0 no-repeat;}
+.social_prin a:hover{width:28px; height:28px; float:left;
+margin:0px; padding:0px; background:url(../images/social/sicua.png)-43px -32px no-repeat;}
+
+
+.social_twt{width:28px; height:28px; float:left;
+margin:0 0 0 8px; padding:0px;}
+.social_twt a{width:28px; height:28px; float:left;
+margin:0px; padding:0px; background:url(../images/social/sicua.png)-83px 0 no-repeat;}
+.social_twt a:hover{width:28px; height:28px; float:left;
+margin:0px; padding:0px; background:url(../images/social/sicua.png)-83px -32px no-repeat;}
+
+
+
+.social_lkdin{width:28px; height:28px; float:left;margin:0 0 0 8px; padding:0px;}
+.social_lkdin a{width:28px; height:28px; float:left;
+margin:0px; padding:0px; background:url(../images/social/sicua.png)-123px 0 no-repeat;}
+.social_lkdin a:hover{width:28px; height:28px; float:left;
+margin:0px; padding:0px; background:url(../images/social/sicua.png)-123px -32px no-repeat;}
+
+.copyright{width:200px; float:left;margin:0px; text-align:right; padding:2px 0px; font-size:11px; font-family:Arial, Helvetica, sans-serif;}
+
+.midpage{width:1034px; display:block; margin:0px auto; padding:0px;  }
+.midpage_box{width:1034px;  margin:0px; height:8px; padding:15px 0 0px 0px;}
+.midpage_box_topbg{width:1034px; float:left; margin:0px; height:0px; padding:15px 0 0px 0px;background:url(../images/pagetopbg.png) left top no-repeat; background-size:100%;}
+.midpage_box_rept{width:1034px; float:left; margin:0px; padding:0px;background:url(../images/pagerepbg.png) left top repeat-y; background-size:100%}
+.midpage_box_bottom{width:1034px; float:left;height:8px; margin:0px; padding:0px;background:url(../images/pagebotmbg.png) left bottom no-repeat; background-size:100%;}
+
+.midpage_box_content{width:985px; float:left; margin:0px; padding:12px 24px; display:block; }
+.cl { clear:both;  }
+.midpage_left_panel{width:723px; float:left; margin:0px; padding:0px;}
+.midpage_left_panel_banner{width:723px; float:left; margin:0px; padding:0px;}
+
+
+
+#banner{width:711px; float:left; margin:0px; padding:5px 5px 13px 5px;  border-radius:5px; background:url(../images/banner_bg.png) center bottom no-repeat;}
+#slider-area{ background:#FFF;border-radius:6px;}
+
+#left_panel_links{width:167px; min-height:290px; float:left; margin:15px 0 0 0px; padding:0px; background:url(../images/divider_shadow.png) right top no-repeat;}
+#left_panel_links ul{width:167px; float:left; margin:0px; padding:0px;}
+#left_panel_links li{ display:block;  }
+#left_panel_links li a{ display:block; background:url(../images/dot_bult.png) 0 10px no-repeat; padding:0px 12px; line-height:30px; color:#00532c; font-size:14px; text-decoration:none; border-bottom: 1px dashed #CCCCCC;}
+#left_panel_links li a:hover{ display:block; background:url(../images/dot_bulthover.png) 0 10px no-repeat #F0F0F0; padding:0px 12px; line-height:30px; color:#333;}
+
+.left_panel_mid_content{width:535px;  float:left; margin:15px 0 0 0px; padding:0px 0 0 20px; font-size:14px;text-align:justify	; }
+
+
+.left_panel_mid_content td{ padding:5px;}
+
+.left_panel_mid_content h1{width:540px;  float:left; margin:5px 0 15px 0px; padding:0px; font-size:20px; font-weight:bold;  }
+
+.left_panel_mid_content h2{width:540px;  float:left; margin:5px 0 5px 0px; padding:0px; font-size:13px; font-weight:bold;  }
+.left_panel_mid_content ul li { padding:0px; font-size:13px; font-weight:normal;  font-size:15px; text-decoration:none; }
+.left_panel_mid_content ul li a{ padding:0px; font-size:13px; font-weight:normal;  font-size:15px; text-decoration:none; }
+.left_panel_mid_content ul li a:hover{ color:#333;}
+
+
+.midpage_right_panel{width:242px; float:right; margin:0px; padding:0px;}
+.midpage_right_panel_form{width:242px; float:right; margin:0px; padding:0px; background:url(../images/form_bg_rpt.png) bottom repeat-x #ffffff;}
+.midpage_right_panel_fb{width:242px; float:right; margin:0px; padding:0px; }
+
+.form_head { width:200px; height:38px; line-height:38px; background:url(../images/form_head.png) top no-repeat; padding-left:41px; color:#ffffff; font-family:Georgia, "Times New Roman", Times, serif; font-size:16px; text-transform:uppercase; margin-bottom:10px; }
+.midpage_right_panel_form td{ font-size:12px; padding:3px 0 0 8px;}
+.midpage_right_panel_form input{ width:130px; font-size:11px; padding:3px 0 0 8px;}
+.midpage_right_panel_form select{ width:142px; font-size:11px; padding:3px 0 0 8px;}
+.midpage_right_panel_form h1{ font-size:12px; padding:3px 0 0 8px;}
+.btn{ width:auto !important;border:0 !important; box-shadow:none !important; color:#ffffff; line-height:28px; margin:0; padding:0 8px !important; font-size:14px !important; background:url(../images/btn.png) center no-repeat;  }
+.green_col{ color:#006330;}
+.orange_col{ color:#e87107; }
+
+
+.midpage_right_panel_img{width:242px; margin:10px 0 5px 0px; padding:0px; float:left; }
+
+
+
+
+.submit_for_hover{ width:161px !important; height:48px !important; float:none; margin:0px; padding:0 12px;  background:url(../images/button.gif)0 0 no-repeat; border:0px  !important; display:block; text-align:center !important; color:#FFF; font-size:22px !important; cursor:pointer; text-shadow:1px 1px 0px #666666;}
+
+.submit_for_hover:hover{  float:none; margin:0px; padding:0px; background:url(../images/button.gif)0 -52px no-repeat;border:0px  !important;}
+.submit_for_hover:active{  float:none; margin:0px; padding:0px; background:url(../images/button.gif)0 -103px no-repeat;border:0px  !important;}
+
+.goudy{font-family:goudy_old_stylebold !important; margin:0px; padding:0px; font-weight:bold !important;}
+.cont { background:url(../images/trans_bg.png); width:450px !important; height:133px !important; padding:5px 10px 10px 20px !important;
+ line-height:17px !important;
+  text-align:justify;
+  -moz-box-shadow: inset 0 0 2px #245863;
+-webkit-box-shadow: inset 0 0 2px #245863;
+box-shadow: inner 0 0 2px #245863; position:absolute; display:block;   right:80px; color:#FFF; font-size:14px !important;  font-family:Georgia, "Times New Roman", Times, serif !important; border-radius:5px; bottom:90px;}
+.cont h1{  color:#FFF; font-size:20px !important;font-family:'goudy_old_stylebold' !important;  }
+
+.gurukul_banner{ width:150px; height:59px; float:right; margin:0px; padding:0px; background:url(../images/gurukul.png) left top no-repeat;}
+.iit{ width:134px; height:40px; float:left; margin:0 0 0 10px; padding:0px; }
+.iit a{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/iit-jee.png)0px 0px no-repeat; }
+.iit a:hover{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/iit-jee.png) 0px -40px no-repeat;  }
+
+
+.neet{ width:134px; height:40px; float:left; margin:0 0 0 8px; padding:0px;  }
+.neet a{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/neet.png)0 0 no-repeat; }
+.neet a:hover{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/neet.png) 0px -40px no-repeat;  }
+
+
+.arjuna{ width:134px; height:40px; float:left; margin:0 0 0 8px; padding:0px;  }
+.arjuna a{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/arjuna.png)0 0 no-repeat; }
+.arjuna a:hover{ width:134px; height:40px; float:left; margin:0px; padding:0px; background:url(../images/arjuna.png) 0px -40px no-repeat;  }
+
+
+.marquee{width:180px; height:250px;}
+.marquee ul{ margin:0px; padding:0px;}
+.marquee li{ width:160px;float:left;display:block; background:url(../images/marquee-li-bg.png) left bottom repeat-x;}
+.marquee li a{ padding:8px; float:left; border:none; background:url(../images/marquee-li-arroq.png) left top no-repeat;}
