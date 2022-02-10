@@ -1,0 +1,256 @@
+.msg {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FF0000;    
+	padding: 4px;
+	font-weight: bold;
+	}
+.table_td_heading
+{
+	font-size:12px;
+	font-weight:bold;
+	color:#333333;
+}
+.linkuser {
+	font-size: 12px;
+	font-weight: bold;
+	color: #006F93;
+	text-decoration: none;
+	display: block;
+	line-height: 25px;
+	height: 25px;
+	width: 160px;
+}
+
+.table_td_text
+{
+font-size:11px;
+font-weight:normal;
+color:#000000;
+}
+.pad_left5
+{
+padding-left:10px;
+}
+
+.whitetxt11, .whitetxt11 a , .whitetxt11 a:visited , .whitetxt11 a:hover  {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;}
+
+.footer {
+	font-size: 14px;
+	color: #FFFFFF;
+	background:url(footerbg.jpg) repeat-x top left;
+	line-height: 35px;
+	height: 35px;
+	padding-left: 25px;
+	}
+	
+.dothr
+{
+	height:2px;
+	background-image:url(sub_dottedLine.gif);
+	background-repeat:repeat-x;
+	background-position: bottom;
+}
+#topNav{
+	float: left;
+	height: 30px;
+
+}
+#topNav ul{
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+    padding-left: 0px;
+	font-size: 9px;
+}
+#topNav ul li{
+	list-style:none;
+	float:left;
+	margin-top: 0;
+	margin-right: 1px;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-left: 0px;
+	}
+#topNav ul li a{
+	color:#595959;
+	display:block;
+	text-decoration:none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 27px;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	background-image: url(top_nav_btn_bg.gif);
+	background-repeat: repeat-x;
+	background-position: 0 bottom;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+	margin: 0px;
+}
+#topNav ul li a:hover{
+	font:bold 11px/27px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#CC006A;
+	background-color:#CFDDE2;
+	background-image:url(butbg.gif);
+	display:block;
+	text-decoration:none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #A5BFC9;
+	border-right-color: #A5BFC9;
+	border-bottom-color: #A5BFC9;
+	border-left-color: #A5BFC9;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+}
+#topNav ul li a.hover{
+	font:bold 11px/27px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#CC006A;
+	background-color:#CFDDE2;
+	background-image:url(butbg.gif);
+	display:block;
+	text-decoration:none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #A5BFC9;
+	border-right-color: #A5BFC9;
+	border-bottom-color: #A5BFC9;
+	border-left-color: #A5BFC9;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 11px;
+	padding-bottom: 0;
+	padding-left: 11px;
+	}
+#subNav{
+	height:30px;
+	float: right;
+	width: 200px;
+	float: right;
+	}
+#subNav ul{
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+#subNav ul li{
+	list-style:none;
+	clear: both;
+	
+	}
+#subNav ul li a{
+	font:bold 11px/27px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#CC006A;
+	background-color:#CFDDE2;
+	background-image:url(butbg.gif);
+	display:block;
+	text-decoration:none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #A5BFC9;
+	border-right-color: #A5BFC9;
+	border-bottom-color: #A5BFC9;
+	border-left-color: #A5BFC9;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 11px;
+	padding-bottom: 0;
+	padding-left: 11px;
+}
+#subNav ul li a:hover{
+	font:bold 11px/27px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#CC006A;
+	background-color:#CFDDE2;
+	background-image:url(butbg.gif);
+	display:block;
+	text-decoration:none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #A5BFC9;
+	border-right-color: #A5BFC9;
+	border-bottom-color: #A5BFC9;
+	border-left-color: #A5BFC9;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 11px;
+	padding-bottom: 0;
+	padding-left: 11px;
+	
+	}
+	
+.Border-in2 {border-bottom:#81cafd 1px solid; border-right:#81cafd 1px solid; border-left:#81cafd 1px solid;}
+.Border-in {border-bottom:#81cafd 1px solid; border-right:#81cafd 1px solid;}
+.Border-botm {border-bottom:#81cafd 1px solid;}
+
+div
+{
+margin:0; 
+padding:0;
+}
+a
+{	color: #426497;
+	text-decoration: none;
+}
+a:hover 
+{
+text-decoration: underline;
+color:#CC006A;
+}
+body {
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.dashboard_title{ font-family:Verdana, Geneva, sans-serif; color:#FFF; background:#41A3F3; padding:10px 12px; border-radius:5px; text-decoration:none; line-height:25px;}
+.dashboard_selaquicrm{width:210px; height:150px; float:none; margin:0px auto; padding:70px 0 0 0px; background:url(../images/crm.jpg) center top no-repeat; text-align:center; font-size:20px;}
+.dashboard_selaquicrm a{width:80px; float:left; margin:0 55px; padding:0px; text-align:center; font-family:Verdana, Geneva, sans-serif; color:#FFF; background:#41A3F3; padding:10px 12px; border-radius:5px; text-decoration:none; line-height:25px;}
+.dashboard_selaquicrm a:hover{ background:#C0CE13}
+
+
+.dashboard_neetcrm{width:210px; height:150px; float:none; margin:0px auto; padding:70px 0 0 0px; background:url(../images/crm.jpg) center top no-repeat; text-align:center; font-size:20px;}
+.dashboard_neetcrm a{width:80px; float:left; margin:0 55px; padding:0px; text-align:center; font-family:Verdana, Geneva, sans-serif; color:#FFF; background:#88BF20; padding:10px 12px; border-radius:5px; text-decoration:none; line-height:25px;}
+.dashboard_neetcrm a:hover{ background:#C0CE13}
+
+.dashboard_iitcrm{width:210px; height:150px; float:none; margin:0px auto; padding:70px 0 0 0px; background:url(../images/crm.jpg) center top no-repeat; text-align:center; font-size:20px;}
+.dashboard_iitcrm a{width:80px; float:left; margin:0 55px; padding:0px; text-align:center; font-family:Verdana, Geneva, sans-serif; color:#FFF; background:#E09125; padding:10px 12px; border-radius:5px; text-decoration:none; line-height:25px;}
+.dashboard_iitcrm a:hover{ background:#C0CE13}
